@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>암수술 보험상담</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f5f7fa; }
+    header { background: #002c5f; color: white; padding: 2rem; text-align: center; }
+    section { padding: 2rem; max-width: 800px; margin: auto; background: white; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h1, h2 { color: #002c5f; }
+    .faq-item { margin-bottom: 1rem; }
+    .faq-question { cursor: pointer; font-weight: bold; background: #e6f0ff; padding: 1rem; border-radius: 5px; }
+    .faq-answer { display: none; padding: 1rem; background: #f0f4f8; border-left: 4px solid #007acc; }
+    form input, form textarea, form button {
+      width: 100%; padding: 1rem; margin-bottom: 1rem;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+    form button { background: #007acc; color: white; border: none; font-size: 1rem; }
+    footer { background: #002c5f; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>최신 암수술과 보험 혜택 안내</h1>
+  <p>최적의 보험 가입으로 암 치료 비용 걱정 없는 미래를 준비하세요</p>
+</header>
+
+<section>
+  <h2>🚀 최신 암수술과 보험상품</h2>
+  <p>
+    최근 도입된 면역세포치료, 표적치료, 로봇수술 등은 암 치료 효과를 높이지만, 비용 부담이 클 수 있습니다.<br/>
+    이에 맞춰 <strong>신의료기술 적용 암특화 보험</strong>이 출시되어 고비용 수술도 보장됩니다.
+  </p>
+  <ul>
+    <li>✔️ 로봇수술/비급여 수술까지 보장</li>
+    <li>✔️ 기존 질병 이력 있어도 일부 가입 가능</li>
+    <li>✔️ 1:1 무료 맞춤 설계 제공</li>
+  </ul>
+</section>
+
+<section>
+  <h2>💬 자주 묻는 질문</h2>
+  <div class="faq-item">
+    <div class="faq-question">Q. 암 보험, 무조건 비쌀까요?</div>
+    <div class="faq-answer">아닙니다. 30대 기준 월 1~2만원대로도 핵심 보장이 가능합니다. 정확한 분석이 중요합니다.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Q. 기존 병력이 있어도 가입 가능할까요?</div>
+    <div class="faq-answer">특정 보험사는 유병자 전용 암 보험도 운영하고 있어 가입 가능성이 있습니다.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Q. 저에게 딱 맞는 보험은 어떻게 찾나요?</div>
+    <div class="faq-answer">전문 설계사와 1:1 상담을 통해 실제 수술 사례, 병력, 가족력 등을 반영해 맞춤 설계를 받을 수 있습니다.</div>
+  </div>
+</section>
+
+<section>
+  <h2>📞 무료 상담 신청</h2>
+  <form>
+    <input type="text" placeholder="이름" required />
+    <input type="tel" placeholder="연락처" required />
+    <textarea placeholder="궁금하신 내용을 적어주세요" rows="4"></textarea>
+    <button type="submit">상담 신청하기</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 보험상담 전문가 나성규</p>
+</footer>
+
+<script>
+  // FAQ Toggle 기능
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
